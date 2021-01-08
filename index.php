@@ -16,7 +16,7 @@ $contra = $_GET['contra'];
 $estado = $_GET['estado'];
 $municipio = $_GET['municipio'];
 $total = $nombre.", ".$direccion.", ".$email.", ".$telefono.", ".$contra.",".$estado.", ".$municipio."'";
-$querycont = pg_query($conexion, "INSERT INTO usuario(nombre,apellido,email,telefono,contra,estado,municipio) VALUES (".$total.");");
+$querycont = pg_query($conexion, "INSERT INTO usuario(nombre,direccion,email,telefono,contra,estado,municipio) VALUES (".$total.");");
 
 pg_close($conexion);
 
